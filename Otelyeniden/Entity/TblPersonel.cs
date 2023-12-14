@@ -26,6 +26,10 @@ namespace Otelyeniden.Entity
         public Nullable<int> Gorev { get; set; }
         public string Acıklama { get; set; }
         public Nullable<int> Durum { get; set; }
+        public string KimlikOn { get; set; }
+        public string KimlikArka { get; set; }
+        public string Sifre { get; set; }
+        public string Yetki { get; set; }
     
         public virtual TblDepartman TblDepartman { get; set; }
         public virtual TblDurum TblDurum { get; set; }

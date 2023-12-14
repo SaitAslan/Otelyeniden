@@ -12,27 +12,21 @@ namespace Otelyeniden.Entity
     using System;
     using System.Collections.Generic;
     
-    public partial class TblUrun
+    public partial class iller
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public TblUrun()
+        public iller()
         {
-            this.TblUrunHareket = new HashSet<TblUrunHareket>();
+            this.ilceler = new HashSet<ilceler>();
+            this.TblMisafir = new HashSet<TblMisafir>();
         }
     
-        public int UrunId { get; set; }
-        public string UrunAd { get; set; }
-        public Nullable<int> UrunGrup { get; set; }
-        public Nullable<int> Birim { get; set; }
-        public Nullable<decimal> Fiyat { get; set; }
-        public Nullable<decimal> Toplam { get; set; }
-        public Nullable<byte> Kdv { get; set; }
-        public Nullable<int> Durum { get; set; }
+        public int id { get; set; }
+        public string sehir { get; set; }
     
-        public virtual TblBirim TblBirim { get; set; }
-        public virtual TblDurum TblDurum { get; set; }
-        public virtual TblUrunGrup TblUrunGrup { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TblUrunHareket> TblUrunHareket { get; set; }
+        public virtual ICollection<ilceler> ilceler { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TblMisafir> TblMisafir { get; set; }
     }
 }

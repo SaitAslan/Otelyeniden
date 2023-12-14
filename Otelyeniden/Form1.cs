@@ -84,5 +84,57 @@ namespace Otelyeniden
             Formlar.Personel.FrmPersonelKarti fr = new Formlar.Personel.FrmPersonelKarti();
             fr.Show();
         }
+
+        private void BtnPersonelListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Personel.FrmPersonelListesi fr = new Formlar.Personel.FrmPersonelListesi();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnMisafirKarti_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Misafir.FrmMisafirKarti fr =new Formlar.Misafir.FrmMisafirKarti();
+            fr.Show();
+        }
+
+        private void BtnMisafirListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Misafir.FrmMisafirListesi fr = new Formlar.Misafir.FrmMisafirListesi();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnUrunListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Urun.FrmUrunListesi fr = new Formlar.Urun.FrmUrunListesi();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+       
+
+        private void BtnUrunKart_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Urun.FrmUrunKarti fr = new Formlar.Urun.FrmUrunKarti();
+            
+            fr.Show();
+        }
+
+        private void BtnUrunGiris_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Urun.FrmUrunGirisHareketleri fr = new Formlar.Urun.FrmUrunGirisHareketleri();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnUrunCıkıs_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Urun.FrmUrunCıkısHareketleri fr = new Formlar.Urun.FrmUrunCıkısHareketleri();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        
     }
 }
